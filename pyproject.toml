@@ -1,0 +1,23 @@
+[project]
+name = "shopapi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "QueenColly", email = "colleteumeh0@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "django>=5.2,<6.0",
+    "djangorestframework>=3.18.3",
+    "djangorestframework-simplejwt>=5.5.1",
+    "djangorestframework-stubs>=3.18.2",
+    "mysqlclient>=2.3.1",
+]
+
+[project.scripts]
+shopapi = "shopapi:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
